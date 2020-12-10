@@ -6,11 +6,11 @@ feature "Attacking player" do
   end
 end
 
-# feature 'Remove hit-points' do
-#   scenario 'Reduces players health after attack' do
-#     sign_in_and_play
-#     click_link 'Attack'
-#     expect(page).not_to have_content 'Aman: 60HP'
-#     expect(page).to have_content 'Aman: 50HP'
-#   end
-# end
+feature 'Remove hit-points' do
+  scenario 'Reduces players health after attack' do
+    sign_in_and_play
+    click_link 'Attack'
+    expect(page).not_to have_content 'Aman: 60HP'
+    expect(page).to have_content 'Aman: 50HP'
+  end
+end
