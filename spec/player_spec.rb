@@ -16,12 +16,7 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages the player' do
-      expect(ian).to receive(:receive_damage)
-      aman.attack(ian)
-    end
-  end
+
 
   describe '#receive_damage' do
     it 'Takes 10 HP from the player' do
